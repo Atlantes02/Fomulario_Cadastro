@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset ="utf-8"/>
+        <title>Cadastro</title>
+        <link rel="icon" type="imagem/png" href="icon.png">
+        <style type="text/css">
+         html{
+            width:90%;margin: 0 auto;min-width:600px;max-width:2000px;
+         }
+            header{
+                background-color: rgb(162, 180, 165);
+                border:2px solid #000000;
+                position:relative;
+                width:100%;
+                top: -100px;
+                
+                
+            }
+            body{
+                position:relative;
+                width:90%;margin: 0 auto;min-width:600px;max-width:2000px;
+                border:2px solid #000000;
+                background-color: black;
+            }
+            h1{
+                color: rgb(255, 255, 255);
+                position:relative;
+                left:44%;
+                top:-15px
+            }
+            img{
+                background-color: null;
+                position:relative;
+                top: 90px;
+            }
+            legend{
+                font: 20px  georgia;
+                color: rgb(2, 85, 2);
+                position:relative;
+                left:19%;
+            }
+            label{
+                font: 20px  georgia;
+                position:relative;
+                left:10%;
+                
+            }
+            form{
+                background-color: #a3a3a2;
+                border:2px solid #000000;
+                position:relative;
+                left:38%;
+                top: -50px;;
+                width: 340px;
+            }
+            input { 
+                background-color: #B0E0E6; 
+                font: 12px verdana, arial, helvetica, sans-serif;
+                color:#325394;
+                border:2px solid #000000;
+                position:relative;
+                left:10%;
+           
+            }
+            textarea{
+                width: 270px;
+                border:2px solid #000000;
+                position:relative;
+                left:10%;
+                resize:none
+            }
+            
+            
+            
+
+            </style>
+   
+        <header>
+            <img  src="logo.png">
+            <h1>CADASTRO</h1>
+            
+        </header>
+
+    </head>
+    <body>
+        
+        <form action = "script.php" method="POST">
+            <legend>Formulário de Cadastro</legend><p></p>
+
+            <label>N°:</label> 
+           <input type ="text" name="numero" required="required" 
+            pattern = "(\d{12})"
+            title = "Obrigatório: 12 dígitos"><br/><br/>
+
+            <label>Data:</label>
+            <input type ="date" name="data" required="required" ><br/><br/>
+
+            <label>Firma:</label>
+            <input type ="text" name="firma" required="required" ><br/><br/>
+
+            <label>Endereço:</label>
+            <input type ="text" name="endereco" required="required" ><br/><br/>
+
+            <label>Comp:</label>
+            <input type ="text" name="comp" required="required" ><br/><br/>
+
+            <label>Bairro:</label>
+            <input type ="text" name="bairro" required="required" ><br><br>
+
+            <label>Cidade:</label>
+            <input type ="text" name="cidade" required="required" ><br><br>
+
+            <label>Estado:</label>
+            <input type ="text" name="estado" required="required" ><br><br>
+
+            <label>CEP:</label>
+            <input type ="text" name="cep" required="required" ><br><br>
+
+            <label>CNPJ:</label>
+            <input type ="text" name="cnpj" required="required" 
+            pattern= "(\d{14})" 
+            title ="Obrigatório: 14 dígitos"><br></br>
+
+            <label>Inscrição:</label>
+            <input type ="text" name="inscr" required="required" ><br><br> 
+         
+            <label>Telefone:</label>
+            <input type ="text" name="tels"  \
+            pattern= "(\d{2}?\d{4}-?\d{4})"   \
+            title ="Insira seu número corretamente"><br><br>
+
+            <label>Celular:</label>
+            <input type ="text" name="cel" required="required"
+            pattern= "(\d{2}?\d{5}?\d{4})"   \
+            title ="Insira seu número corretamente"><br><br>
+
+            <label>E-mail:</label>
+            <input type ="email" name="mail"br><br>
+
+            <label>OBS:</label><br><br>
+            <textarea name="obs" required="required"></textarea><br><br>
+
+
+            <input type="submit" value="Enviar Formulário"><br><br>
+            
+
+        </form>
+    </body>
+</html>
